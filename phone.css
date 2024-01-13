@@ -1,0 +1,51 @@
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+.menu-img{
+    height: 100px;
+    width: 100px;
+}
+.text{
+    margin-left: 1rem;
+    width: auto;
+}
+.left{
+    width: 0;
+}
+.text > h1{
+    font-size: 3rem;
+}
+.text > p{
+    font-size: 1rem;
+}
+.right> a{
+    font-size: 1.5rem;
+    margin-left: 4rem;
+}
+.social{
+    margin-left: 2rem;
+    
+}
+.menuitems h3 {
+    font-size: 1rem;
+}
+.menuitems p{
+    font-size: 1.2rem;
+}
+#Review{
+    display: flex;
+    flex-direction: column ;
+}
+#reviewposted{
+    width: 100vw;
+}
+fieldset{
+    margin-left: 0;
+}
+.inputs input{
+    width: 11rem;
+}
+legend{
+    margin-left: 0;
+}

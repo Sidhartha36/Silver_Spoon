@@ -1,0 +1,404 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* Navigation Bar  */
+#menu{
+    background-color: silver;
+}
+.shopping img{
+    width: 40px;
+}
+.shopping{
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+.quantity{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+}
+#navbar::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+}
+.navbtn{
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.navbtn:hover{
+    color: black;
+    /* background-color: rgb(188, 174, 222); */
+    background-color: silver;
+    transition: 0.5s;
+    box-shadow: 0 0 18px white;
+}
+/* Navigation Bar: logo */
+#logo{
+    height: 84px;
+    padding: 0px;
+}
+
+/* Home page designing */
+.home{
+    display: flex;
+    /* position: absolute;
+    top: 0; */
+}
+.left{
+    z-index: -1;
+    width: 50vw;
+}
+.left > img{
+    width: 100%;
+    height: 100vh;
+    object-position: 50% 50%;
+    object-fit: cover;
+    /* transform: translate(-50%, -50%) rotate(0deg); */
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    width: 32rem;
+    height: 20rem;
+    /* border: 2px solid red; */
+    position: relative;
+    top: 6.5rem;
+    margin-left: 9rem;
+}
+.text > h1{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #212121;
+    /* position: relative;
+    top: 6.5rem; */
+}
+.text >p{
+    font-family: 'Darker Grotesque', sans-serif;
+        font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    /* position: relative;
+    top: 6.5rem; */
+}
+.right > a{
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    width:fit-content;
+    position: absolute;
+    bottom: 169px;
+    margin-left: 143px;
+    padding: 1rem;
+    border-radius: 80px;
+    transition: 0.5s;
+}
+.right > a:hover{
+    box-shadow: 0 0 18px black;
+    transition: 0.5s;
+    background-color: gold;
+}
+.social{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 9rem;
+}
+.social > a{
+    padding-left: 20px;
+}
+.socialmedia{    width: 40px;
+    transition: 0.5s;
+    padding: 6px;
+}
+.socialmedia:hover{
+    background-color: rgb(160, 160, 223);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+/* styling the menu section  */
+.menu{
+    background-color: rgb(237,224,209);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.menu-img{
+    transform-origin: 185.15px 277.725px;
+    width: 370.3px;
+    height: 370.3px;
+    /* display: block; */
+    opacity: 1.0;
+    object-fit: fill;
+    /* z-index: -1; */
+    /* width: 100%;  */
+    /* height: 100%; */
+    object-fit: cover; 
+    display: flex;
+    border: 5px solid #E79B7F;
+    border-radius: 50%;
+    /* display: flex; */
+    justify-content: center;
+    transition: 0.5s;
+
+}
+.menuitems{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+}
+.menucards{
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menuitems h3{
+    padding-top: 14px;
+    color: #E79B7F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+.menuitems p{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.7rem;
+}
+.menu h1{
+    color: #38495B;
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 250;
+}
+.viewmenu{
+    border: 2px solid rgb(203,161,93);
+    position: relative;
+    bottom: -50px;
+    padding: 20px;
+    color: rgb(56,73,91);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.5s;
+
+}
+.viewmenu:hover{
+    box-shadow: 0 0 6px black;
+    transition: 0.5s;
+    border: 4px solid rgb(203,161,93);
+
+    /* background-color: gold; */
+
+}
+.menu-img:hover{
+    box-shadow: 0 0 18px black;
+
+}
+.cart{
+    position: fixed;
+    top:0;
+    left:100%;
+    width: 500px;
+    background-color:#efac5f;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 100;
+}
+.active .cart{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.cart h1{
+    color:#212121;
+    background-color: aqua;
+    font-weight: 900;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.cart .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.cart .checkOut div{
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cart .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+.reviewposted{
+    width: 50vw;
+}
+
+#Reviewh1{
+    font: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Balthazar', serif;
+}
+#Review{
+    display: flex;
+}
+.Review{
+    width: 50%;
+    height: 100vh;
+}
+#reviewposted h3{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Balthazar', serif;
+    padding-bottom: 23px;
+}
+#review1,#review2,#review3{
+    /* border: 2px solid red; */
+    margin: 1rem;
+    /* border-radius: 100px; */
+
+}
+.reviewername{
+    background-color: rgb(247, 7, 118,0.5);
+    padding: 2rem;
+    border-radius: 50px;
+}
+.reviewmsg{
+    background-color: rgb(152, 150, 241,0.5);
+    border-radius: 50px;
+    padding: 2rem;
+}
+.reviewername h4{
+    font-size: 1.5rem;
+}
+.reviewmsg p{
+    font-size: 1.5rem;
+}
+/* styling the review form */
+fieldset{
+    margin-left: 88px;
+    margin-top: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    /* width: 42rem;
+    height: 28rem; */
+    background-color: rgb(53, 47, 68,0.5);
+    border-radius: 25px;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+legend{
+    align-items: center;
+    margin-left: 130px;
+    padding: 24px;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    background-color: rgb(46, 55, 174);
+    border-radius: 25px;
+    color: white;
+}
+.inputs p{
+    font-size: 2rem;
+    padding: 10px;
+}
+.inputs input{
+    margin-left: 25px;
+    width: 32rem;
+    border-radius: 10px
+}
+input{
+    padding-left:20px ;
+    font-size: 1rem;
+}
+.clear_submit{
+    justify-content: center;
+    align-items: center;
+    padding-left:25px ;
+    /* padding: 2px; */
+    justify-content: space-between;
+}
+.btn{
+    font-size: 1.5rem;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+.center{
+    text-align: center;
+    background-color: black;
+    color: wheat;
+}
+#reeview{
+    background-color: #E79B7F;
+}
+#about-us {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  #about-us h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  #about-us p {
+    color: #666;
+    line-height: 1.5;
+  }

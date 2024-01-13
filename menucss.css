@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.shopping img{
+    width: 40px;
+}
+.shopping{
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+.quantity{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.menu{
+    background-color: rgb(237,224,209);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    }
+.clickpart{
+    display: flex;
+}
+.card img{
+    transform-origin: 185.15px 277.725px;
+    width: 300px;
+    height: 300px;
+    /* display: block; */
+    opacity: 1.0;
+    object-fit: fill;
+    /* z-index: -1; */
+    /* width: 100%;  */
+    /* height: 100%; */
+    object-fit: cover; 
+    display: flex;
+    border: 5px solid #E79B7F;
+    border-radius: 50%;
+    /* display: flex; */
+    justify-content: center;
+    transition: 0.5s;
+}
+.card{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.card h3{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #E79B7F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+.price{
+    border: 2px solid #E79B7F;
+    background-color: #E79B7F;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    padding:0px 23px;
+    margin-bottom: 4px;
+
+}
+.addtocart{
+    text-decoration: none;
+    border: 2px solid #E79B7F;
+    color:#38495B;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 40px;
+    padding: 6px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+
+}
+.addtocart:hover{
+    box-shadow: 0 0 6px black;
+    transition: 0.5s;
+    /* border: 4px solid rgb(203,161,93); */
+}
+.head{
+    background-color: #2694af;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 2rem;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.head::before{
+    content: "+";
+    position: absolute;
+    right: 3rem;
+    font-size: 2rem;
+
+}
+.clickpart{
+    position: relative;
+     height: 36rem;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto; 
+}
+

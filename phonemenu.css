@@ -1,0 +1,28 @@
+.card img{
+    width: 75px;
+    height: 75px;
+}
+.card h3 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #E79B7F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+.price {
+    border: 2px solid #E79B7F;
+    background-color: #E79B7F;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    padding: 0px 2px;
+    margin-bottom: 4px;
+}
+.addtocart{
+    font-size: 0.9rem;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
